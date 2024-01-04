@@ -16,6 +16,12 @@
 		}
 	},
 	"scripts": {
+		"dev": "pnpm exec turbo dev",
+		"dev:my-app": "pnpm exec turbo dev --filter=@turborepo-practice/my-app",
+		"dev:my-utils": "pnpm exec turbo dev --filter=@turborepo-practice/my-utils",
+		"build": "pnpm exec turbo build",
+		"build:my-app": "pnpm exec turbo build --filter=@turborepo-practice/my-app",
+		"build:my-utils": "pnpm exec turbo build --filter=@turborepo-practice/my-utils",
 		"commit": "pnpm git-cz",
 		"prepare": "husky install",
 		"husky:permission": "chmod +x .husky/*"
@@ -33,6 +39,7 @@
 		"husky": "^8.0.3",
 		"lint-staged": "^15.2.0",
 		"prettier": "^3.1.1",
+		"turbo": "^1.11.2",
 		"typescript": "^5.3.3"
 	}
 }

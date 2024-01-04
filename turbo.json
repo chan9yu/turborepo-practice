@@ -1,0 +1,21 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"pipeline": {
+		"@turborepo-practice/my-app#dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"@turborepo-practice/my-utils#dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"@turborepo-practice/my-app#build": {
+			"dependsOn": ["^build"],
+			"outputs": [".next/**", "!.next/cache/**"]
+		},
+		"@turborepo-practice/my-utils#build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		}
+	}
+}

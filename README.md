@@ -45,7 +45,13 @@ Vercel과 AWS, Miro, PayPal, Discord, LINE+의 Universal Video Player 등
 turbo run build
 turbo run build --filter=shared
 turbo run lint test build
+
+# 워크스페이스 생성
 turbo gen workspace
+# 예시
+pnpm exec turbo gen workspace --name my-utils
+
+
 turbo login
 turbo link
 ```

@@ -1,0 +1,14 @@
+{
+	"name": "@turborepo-practice/my-utils",
+	"version": "0.0.1",
+	"description": "📦 Turborepo practice repository | my-utils",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"dev": "tsc --watch",
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"typescript": "^5.3.3"
+	}
+}
